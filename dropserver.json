@@ -1,0 +1,19 @@
+{
+	"data-dir": "/srv/dropserver",
+	"server": {
+		"http-port": 5050,
+		"no-tls": true
+	},
+	"external-access": {
+		"scheme": "http",
+		"domain": "local.dropserver.org",
+		"subdomain": "dropid",
+		"port": 5050
+	},
+	"sandbox":{
+		"num": 3,
+		"sockets-dir": "/var/run/dropserver",
+		"use-cgroups": false,
+		"use-bubblewrap": false
+	}
+}
